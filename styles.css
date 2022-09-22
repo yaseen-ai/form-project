@@ -1,0 +1,23 @@
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  background-color: #213159;
+  padding: 20px 0px;
+  width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  padding: 10px 0 10px 0;
+  color: gainsboro;
+}
+input {
+  display: block;
+  height: 25px;
+  width: 75%;
+  margin-top: 5px;
+}
