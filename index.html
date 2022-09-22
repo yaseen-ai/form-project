@@ -20,19 +20,27 @@
       <div id="first-fieldset">
         <fieldset>
           <legend>Basic Information</legend>
-          <label for="full-name"
-            >Full Name
-            <input required id="full-name" name="full-name" type="text"
-          /></label>
-          <label for="email"
-            >Email<input required id="email" name="email" type="email"
-          /></label>
-          <label for="phone"
-            >Phone Number<input required id="phone" name="phone" type="phone"
-          /></label>
-          <label for="age"
-            >Age<input id="age" name="age" type="number" min="13" max="175"
-          /></label>
+          <div>
+            <label for="full-name"
+              >Full Name
+              <input required id="full-name" name="full-name" type="text"
+            /></label>
+          </div>
+          <div>
+            <label for="email"
+              >Email<input required id="email" name="email" type="email"
+            /></label>
+          </div>
+          <div>
+            <label for="phone"
+              >Phone Number<input required id="phone" name="phone" type="phone"
+            /></label>
+          </div>
+          <div>
+            <label for="age"
+              >Age<input id="age" name="age" type="number" min="13" max="175"
+            /></label>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Additional Information</legend>
@@ -51,8 +59,49 @@
           <div>
             <legend>Would you recommend us for a friend?</legend>
             <div>
-              <input id="recommend" type="radio" value="definetly" />
-              <label for="recommend">Definetly</label>
+              <input
+                id="definetly"
+                name="recommend"
+                type="radio"
+                value="definetly"
+              />
+              <label for="definetly">Definetly</label>
+            </div>
+            <div>
+              <input id="maybe" name="recommend" type="radio" value="maybe" />
+              <label for="maybe">Maybe</label>
+            </div>
+            <div>
+              <input
+                id="not-sure"
+                name="recommend"
+                type="radio"
+                value="not-sure"
+              />
+              <label for="not-sure">Not sure</label>
+            </div>
+            <div>
+              <input id="no" name="recommend" type="radio" value="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
+          <div>
+            <legend>What improvements do you want to see in our app?</legend>
+            <div>
+              <input type="checkbox" id="ui" />
+              <label for="ui">UI</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ux" />
+              <label for="ux">UX</label>
+            </div>
+            <div>
+              <input type="checkbox" id="apis" />
+              <label for="apis">APIs</label>
+            </div>
+            <div>
+              <input type="checkbox" id="other-i" />
+              <label for="other-i">Other</label>
             </div>
           </div>
         </fieldset>
