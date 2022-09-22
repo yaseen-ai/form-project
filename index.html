@@ -17,31 +17,37 @@
     <h1 id="title">My Survey Form</h1>
     <p>Lorem Ipsum Just a Placeholder Text</p>
     <form>
-      <fieldset Basic Information>
-        <label for="full-name"
-          >Full Name
-          <input required id="full-name" name="full-name" type="text"
-        /></label>
-        <label for="email"
-          >Email<input required id="email" name="email" type="email"
-        /></label>
-        <label for="phone"
-          >Phone Number<input required id="phone" name="phone" type="phone"
-        /></label>
-        <label for="age"
-          >Age<input id="age" name="age" type="number" min="13" max="175"
-        /></label>
-      </fieldset>
-      <label>
-        Which option best describes your current role?
-        <select>
-          <option value="">(Select Option)</option>
-          <option value="frontend">Frontend Web Developer</option>
-          <option value="backend">Backend Web Developer</option>
-          <option value="full-stack">Full Stack Developer</option>
-          <option value="other">Other</option>
-        </select></label
-      >
+      <div id="first-fieldset">
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="full-name"
+            >Full Name
+            <input required id="full-name" name="full-name" type="text"
+          /></label>
+          <label for="email"
+            >Email<input required id="email" name="email" type="email"
+          /></label>
+          <label for="phone"
+            >Phone Number<input required id="phone" name="phone" type="phone"
+          /></label>
+          <label for="age"
+            >Age<input id="age" name="age" type="number" min="13" max="175"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label>
+            Which option best describes your current role?
+            <select>
+              <option value="">(Select Option)</option>
+              <option value="frontend">Frontend Web Developer</option>
+              <option value="backend">Backend Web Developer</option>
+              <option value="full-stack">Full Stack Developer</option>
+              <option value="other">Other</option>
+            </select></label
+          >
+        </fieldset>
+      </div>
       <label><input type="submit" /></label>
     </form>
   </body>
