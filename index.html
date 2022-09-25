@@ -14,20 +14,19 @@
     <title>Form</title>
   </head>
   <body>
-    <h1 id="title">My Survey Form</h1>
-    <p>Lorem Ipsum Just a Placeholder Text</p>
-    <form>
+    <h1 id="title">My Survey</h1>
+    <p id="description">Lorem Ipsum Just a Placeholder Text</p>
+    <form id="survey-form">
       <div id="first-fieldset">
         <fieldset>
           <legend>Basic Information</legend>
           <div>
-            <label for="full-name"
-              >Full Name
-              <input required id="full-name" name="full-name" type="text"
+            <label id="name-label" for="name"
+              >Full Name <input required id="name" name="full-name" type="text"
             /></label>
           </div>
           <div>
-            <label for="email"
+            <label id="email-label" for="email"
               >Email<input required id="email" name="email" type="email"
             /></label>
           </div>
@@ -37,8 +36,13 @@
             /></label>
           </div>
           <div>
-            <label for="age"
-              >Age<input id="age" name="age" type="number" min="13" max="175"
+            <label id="number-label" for="number"
+              >Age<input
+                id="number"
+                name="age"
+                type="number"
+                min="13"
+                max="175"
             /></label>
           </div>
         </fieldset>
@@ -88,19 +92,19 @@
           <div>
             <legend>What improvements do you want to see in our app?</legend>
             <div>
-              <input type="checkbox" id="ui" />
+              <input value="1" type="checkbox" id="ui" />
               <label for="ui">UI</label>
             </div>
             <div>
-              <input type="checkbox" id="ux" />
+              <input value="2" type="checkbox" id="ux" />
               <label for="ux">UX</label>
             </div>
             <div>
-              <input type="checkbox" id="apis" />
+              <input value="3" type="checkbox" id="apis" />
               <label for="apis">APIs</label>
             </div>
             <div>
-              <input type="checkbox" id="other-i" />
+              <input value="4" type="checkbox" id="other-i" />
               <label for="other-i">Other</label>
             </div>
           </div>
