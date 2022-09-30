@@ -22,23 +22,40 @@
           <legend>Basic Information</legend>
           <div>
             <label id="name-label" for="name"
-              >Full Name <input required id="name" name="full-name" type="text"
+              >Full Name
+              <input
+                required
+                id="name"
+                name="full-name"
+                placeholder="Enter Full Name"
+                type="text"
             /></label>
           </div>
           <div>
             <label id="email-label" for="email"
-              >Email<input required id="email" name="email" type="email"
+              >Email<input
+                required
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter Email"
             /></label>
           </div>
           <div>
             <label for="phone"
-              >Phone Number<input required id="phone" name="phone" type="phone"
+              >Phone Number<input
+                required
+                id="phone"
+                name="phone"
+                type="phone"
+                placeholder="Enter Email"
             /></label>
           </div>
           <div>
             <label id="number-label" for="number"
               >Age<input
                 id="number"
+                placeholder="Enter Age"
                 name="age"
                 type="number"
                 min="13"
@@ -51,7 +68,7 @@
           <div>
             <label>
               Which option best describes your current role?
-              <select>
+              <select id="dropdown">
                 <option value="">(Select Option)</option>
                 <option value="frontend">Frontend Web Developer</option>
                 <option value="backend">Backend Web Developer</option>
@@ -108,9 +125,19 @@
               <label for="other-i">Other</label>
             </div>
           </div>
+          <div>
+            <label for="txtarea">
+              <textarea
+                name="txtarea"
+                id="txtarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+          </div>
         </fieldset>
       </div>
-      <label><input type="submit" /></label>
+      <label><input id="submit" type="submit" /></label>
     </form>
   </body>
 </html>
