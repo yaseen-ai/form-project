@@ -14,8 +14,10 @@
     <title>Form</title>
   </head>
   <body>
-    <h1 id="title">My Survey Form</h1>
-    <p id="description">Lorem Ipsum Just a Placeholder Text</p>
+    <h1 id="title">Front End Web Developer Job Application</h1>
+    <p id="description">
+      Please fill out this form with the required information
+    </p>
     <form id="survey-form">
       <div id="first-fieldset">
         <fieldset>
@@ -26,6 +28,7 @@
               <input
                 required
                 id="name"
+                class="backtoline"
                 name="full-name"
                 placeholder="Enter Full Name"
                 type="text"
@@ -39,6 +42,7 @@
                 name="email"
                 type="email"
                 placeholder="Enter Email"
+                class="backtoline"
             /></label>
           </div>
           <div>
@@ -49,16 +53,18 @@
                 name="phone"
                 type="phone"
                 placeholder="Enter Email"
+                class="backtoline"
             /></label>
           </div>
           <div>
             <label id="number-label" for="number"
               >Age<input
                 id="number"
+                class="backtoline"
                 placeholder="Enter Age"
                 name="age"
                 type="number"
-                min="13"
+                min="18"
                 max="175"
             /></label>
           </div>
@@ -86,7 +92,7 @@
                 type="radio"
                 value="definetly"
               />
-              <label for="definetly">Definetly</label>
+              <label class="inline" for="definetly">Definetly</label>
             </div>
             <div>
               <input id="maybe" name="recommend" type="radio" value="maybe" />
@@ -95,6 +101,7 @@
             <div>
               <input
                 id="not-sure"
+                class="inline"
                 name="recommend"
                 type="radio"
                 value="not-sure"
@@ -126,14 +133,13 @@
             </div>
           </div>
           <div>
-            <label for="txtarea">
-              <textarea
-                name="txtarea"
-                id="txtarea"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </label>
+            <label for="txtarea"> BIO </label>
+            <textarea
+              class="backtoline"
+              rows="5"
+              name="txtarea"
+              id="txtarea"
+            ></textarea>
           </div>
         </fieldset>
       </div>
